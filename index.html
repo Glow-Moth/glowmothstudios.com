@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlowMoth Studios</title>
+<meta name="description" content="GlowMoth Studios makes cozy little games. Our first: Kitty Baskets: Cat Sort Puzzle.">
+<link rel="icon" href="kitty-baskets.png">
+<style>
+  :root { --bg: #0b0a0f; --ink: #f4f2f8; --muted: #a7a2b3; --line: #26232e; --card: #15131b; --accent: #b3a1ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: radial-gradient(1200px 600px at 50% -10%, #221d33, var(--bg)); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 48px; }
+  .brand { font-size: clamp(2rem, 7vw, 3.2rem); font-weight: 900; letter-spacing: 0.04em; margin: 0; }
+  .tag { color: var(--muted); margin: 6px 0 40px; font-size: 1.1rem; }
+  .game { display: flex; gap: 18px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 18px; }
+  .game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  .game h2 { margin: 0 0 4px; font-size: 1.25rem; }
+  .game p { margin: 0; color: var(--muted); }
+  .soon { display: inline-block; margin-top: 10px; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  a { color: var(--accent); }
+  @media (max-width: 420px) { .game { flex-direction: column; text-align: center; } }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="brand">GlowMoth Studios</h1>
+  <p class="tag">Cozy little games, made with care.</p>
+
+  <section class="game">
+    <img src="kitty-baskets.png" alt="Kitty Baskets app icon">
+    <div>
+      <h2>Kitty Baskets: Cat Sort Puzzle</h2>
+      <p>Sort the kittens into their baskets. Hundreds of levels, dozens of cats to collect, and a few secrets to find.</p>
+      <span class="soon">Coming soon to Google Play</span>
+    </div>
+  </section>
+
+  <footer>
+    <a href="privacy/">Privacy Policy</a>
+    <a href="mailto:dremo@glowmothstudios.com">dremo@glowmothstudios.com</a>
+    <span>© 2026 GlowMoth Studios</span>
+  </footer>
+</main>
+</body>
+</html>
