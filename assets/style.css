@@ -47,6 +47,7 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px 56px; }
 .moth .ring { stroke: var(--ink); }
 .moth .ant { stroke: var(--ink); }
 .moth .body { fill: var(--ink); stroke: var(--bg); }
+.moth .stripes { stroke: var(--bg); fill: none; }
 .moth .glow stop { stop-color: var(--glow); }
 
 /* top bar (inner pages): small logo + wordmark, and the theme toggle */
