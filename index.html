@@ -6,28 +6,39 @@
 <title>GlowMoth Studios</title>
 <meta name="description" content="GlowMoth Studios makes cozy little games. Our first: Kitty Baskets: Cat Sort Puzzle.">
 <link rel="icon" href="kitty-baskets.png">
-<style>
-  :root { --bg: #0b0a0f; --ink: #f4f2f8; --muted: #a7a2b3; --line: #26232e; --card: #15131b; --accent: #b3a1ff; }
-  * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; background: radial-gradient(1200px 600px at 50% -10%, #221d33, var(--bg)); color: var(--ink);
-    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 48px; }
-  .brand { font-size: clamp(2rem, 7vw, 3.2rem); font-weight: 900; letter-spacing: 0.04em; margin: 0; }
-  .tag { color: var(--muted); margin: 6px 0 40px; font-size: 1.1rem; }
-  .game { display: flex; gap: 18px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 18px; }
-  .game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
-  .game h2 { margin: 0 0 4px; font-size: 1.25rem; }
-  .game p { margin: 0; color: var(--muted); }
-  .soon { display: inline-block; margin-top: 10px; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
-  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 8px 18px; }
-  a { color: var(--accent); }
-  @media (max-width: 420px) { .game { flex-direction: column; text-align: center; } }
-</style>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/theme.js"></script>
 </head>
 <body>
+<div class="bar"><span></span><button class="theme-btn" type="button" aria-label="Switch theme">🌙</button></div>
 <main>
-  <h1 class="brand">GlowMoth Studios</h1>
-  <p class="tag">Cozy little games, made with care.</p>
+  <section class="hero">
+    <svg class="moth " viewBox="0 0 200 200" aria-hidden="true">
+  <defs><radialGradient id="mothHero" class="glow"><stop offset="0" stop-opacity="1"/><stop offset="0.5" stop-opacity="0.25"/><stop offset="1" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="100" cy="100" r="96" fill="url(#mothHero)"/>
+  <circle class="ring" cx="100" cy="100" r="64" fill="none" stroke-opacity="0.28" stroke-width="1.2"/>
+  <g>
+    <path class="w" d="M97 92 C80 70 42 38 22 41 C9 43 12 61 29 74 C49 89 80 96 97 95 Z"/>
+    <path class="vein" d="M92 90 C74 76 50 58 30 50 M90 94 C70 86 48 76 27 64" stroke-opacity="0.35" stroke-width="1" fill="none"/>
+    <path class="w2" d="M97 99 C82 100 60 108 57 127 C55 145 72 150 86 138 C94 130 97 115 97 103 Z"/>
+    <circle class="d" cx="38" cy="52" r="7.5"/><circle class="w" cx="38" cy="52" r="4.2"/><circle class="d" cx="39.5" cy="50.5" r="1.3"/>
+    <circle class="d" cx="72" cy="133" r="5.2"/><circle class="w" cx="72" cy="133" r="2.6"/>
+    <path class="ant" d="M97.5 69 C93 56 85 45 77 41 C73.5 39.5 71 42.5 74 44.5" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(200 0) scale(-1 1)">
+    <path class="w" d="M97 92 C80 70 42 38 22 41 C9 43 12 61 29 74 C49 89 80 96 97 95 Z"/>
+    <path class="vein" d="M92 90 C74 76 50 58 30 50 M90 94 C70 86 48 76 27 64" stroke-opacity="0.35" stroke-width="1" fill="none"/>
+    <path class="w2" d="M97 99 C82 100 60 108 57 127 C55 145 72 150 86 138 C94 130 97 115 97 103 Z"/>
+    <circle class="d" cx="38" cy="52" r="7.5"/><circle class="w" cx="38" cy="52" r="4.2"/><circle class="d" cx="39.5" cy="50.5" r="1.3"/>
+    <circle class="d" cx="72" cy="133" r="5.2"/><circle class="w" cx="72" cy="133" r="2.6"/>
+    <path class="ant" d="M97.5 69 C93 56 85 45 77 41 C73.5 39.5 71 42.5 74 44.5" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </g>
+  <ellipse class="body" cx="100" cy="109" rx="6.5" ry="30" stroke-width="2"/>
+</svg>
+    <h1 class="word">GLOWMOTH</h1>
+    <div class="sub"><i></i><span>STUDIOS</span><i></i></div>
+    <p class="tag">Cozy little games, made with care.</p>
+  </section>
 
   <section class="game">
     <img src="kitty-baskets.png" alt="Kitty Baskets app icon">
@@ -37,7 +48,6 @@
       <span class="soon">Coming soon to Google Play</span>
     </div>
   </section>
-
   <footer>
     <a href="privacy/">Privacy Policy</a>
     <a href="terms/">Terms of Service</a>

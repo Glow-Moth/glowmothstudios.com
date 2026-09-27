@@ -6,27 +6,33 @@
 <title>Terms of Service · GlowMoth Studios</title>
 <meta name="description" content="Terms of Service for Kitty Baskets: Cat Sort Puzzle and other games by GlowMoth Studios.">
 <link rel="icon" href="../kitty-baskets.png">
-<style>
-  :root { --bg: #ffffff; --ink: #16151a; --muted: #5d5a66; --line: #e6e3ea; --accent: #6d4fd8; --card: #f6f5f9; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #0e0d12; --ink: #f1eff6; --muted: #a9a4b5; --line: #2a2733; --accent: #b3a1ff; --card: #17151e; } }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  header a { color: var(--ink); text-decoration: none; font-weight: 800; letter-spacing: 0.02em; }
-  h1 { font-size: 2rem; line-height: 1.2; margin: 28px 0 4px; }
-  h2 { font-size: 1.2rem; margin: 36px 0 8px; }
-  .muted { color: var(--muted); }
-  a { color: var(--accent); }
-  ul { padding-left: 1.2em; }
-  li { margin: 4px 0; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 20px 0; }
-  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 8px 18px; }
-</style>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/theme.js"></script>
 </head>
 <body>
-<main>
-  <header><a href="../">GlowMoth Studios</a></header>
-
+<div class="bar"><a class="brand" href="../"><svg class="moth " viewBox="0 0 200 200" aria-hidden="true">
+  <defs><radialGradient id="mothSmall" class="glow"><stop offset="0" stop-opacity="1"/><stop offset="0.5" stop-opacity="0.25"/><stop offset="1" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="100" cy="100" r="96" fill="url(#mothSmall)"/>
+  <circle class="ring" cx="100" cy="100" r="64" fill="none" stroke-opacity="0.28" stroke-width="1.2"/>
+  <g>
+    <path class="w" d="M97 92 C80 70 42 38 22 41 C9 43 12 61 29 74 C49 89 80 96 97 95 Z"/>
+    <path class="vein" d="M92 90 C74 76 50 58 30 50 M90 94 C70 86 48 76 27 64" stroke-opacity="0.35" stroke-width="1" fill="none"/>
+    <path class="w2" d="M97 99 C82 100 60 108 57 127 C55 145 72 150 86 138 C94 130 97 115 97 103 Z"/>
+    <circle class="d" cx="38" cy="52" r="7.5"/><circle class="w" cx="38" cy="52" r="4.2"/><circle class="d" cx="39.5" cy="50.5" r="1.3"/>
+    <circle class="d" cx="72" cy="133" r="5.2"/><circle class="w" cx="72" cy="133" r="2.6"/>
+    <path class="ant" d="M97.5 69 C93 56 85 45 77 41 C73.5 39.5 71 42.5 74 44.5" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(200 0) scale(-1 1)">
+    <path class="w" d="M97 92 C80 70 42 38 22 41 C9 43 12 61 29 74 C49 89 80 96 97 95 Z"/>
+    <path class="vein" d="M92 90 C74 76 50 58 30 50 M90 94 C70 86 48 76 27 64" stroke-opacity="0.35" stroke-width="1" fill="none"/>
+    <path class="w2" d="M97 99 C82 100 60 108 57 127 C55 145 72 150 86 138 C94 130 97 115 97 103 Z"/>
+    <circle class="d" cx="38" cy="52" r="7.5"/><circle class="w" cx="38" cy="52" r="4.2"/><circle class="d" cx="39.5" cy="50.5" r="1.3"/>
+    <circle class="d" cx="72" cy="133" r="5.2"/><circle class="w" cx="72" cy="133" r="2.6"/>
+    <path class="ant" d="M97.5 69 C93 56 85 45 77 41 C73.5 39.5 71 42.5 74 44.5" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </g>
+  <ellipse class="body" cx="100" cy="109" rx="6.5" ry="30" stroke-width="2"/>
+</svg><b>GLOWMOTH</b></a><button class="theme-btn" type="button" aria-label="Switch theme">🌙</button></div>
+<main class="doc">
   <h1>Terms of Service</h1>
   <p class="muted">Last updated: 27 September 2026</p>
 
@@ -103,8 +109,11 @@
   <p>GlowMoth Studios<br>
   Email: <a href="mailto:dremo@glowmothstudios.com">dremo@glowmothstudios.com</a></p>
 
+  
   <footer>
     <a href="../privacy/">Privacy Policy</a>
+    <a href="../terms/">Terms of Service</a>
+    <a href="mailto:dremo@glowmothstudios.com">dremo@glowmothstudios.com</a>
     <span>© 2026 GlowMoth Studios</span>
   </footer>
 </main>
